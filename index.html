@@ -10,50 +10,12 @@
     />
 
     <title>Yashwant</title>
-  </head>
-  <style>
-    /* body {
-        margin: 10;
+
+    <style>
+      body {
+        margin: 0;
         padding: 0;
-        font-family: 'Arial', sans-serif;
-      } */
-
-    .root {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      margin-right: 200px;
-      margin-left: 200px;
-      align-items: center;
-      height: 65vh;
-      margin-top: 20vh;
-    }
-
-    /* .gif-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        margin-bottom: 1rem;
-        margin-top: 30rem; 
-      } */
-
-    .text {
-      font-family: "Arial", sans-serif;
-      font-size: 80px;
-    }
-
-    @media screen and (max-width: 768px) {
-      h1 {
         font-family: "Arial", sans-serif;
-        font-size: 1.7rem;
-        /* text-align: left; */
-        text-align: center;
-        display: inline;
-      }
-      .textcont {
-        width: 100%;
-        background: #dd1010;
       }
 
       .root {
@@ -61,22 +23,51 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        height: 100vh;
+
+        margin-left: 1vh;
+        margin-right: 1vh;
       }
-      img {
-        width: 300px;
-        height: 350px;
-        object-fit: cover;
+
+      .gif-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0.2;
+        margin-left: 10vh;
+        margin-right: 10vh;
       }
-    }
-  </style>
+
+      .gif-container img {
+        max-width: 100%; /* Adjust the value or remove it to set the desired width */
+      }
+
+      .text {
+        font-family: "Arial", sans-serif;
+        font-size: 20px;
+        text-align: center;
+      }
+
+      @media screen and (min-width: 768px) {
+        .root {
+          flex-direction: row;
+        }
+
+        .text {
+          font-size: 50px;
+          margin-left: 1rem;
+        }
+      }
+    </style>
+  </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div class="root">
       <div class="gif-container">
         <img src="korean.gif" alt="Korean GIF" />
       </div>
-      <div class="textcont">
-        <h1 class="text">Bana lenge ek din</h1>
+      <div class="text">
+        <h1>Bana lenge ek din</h1>
       </div>
     </div>
   </body>
